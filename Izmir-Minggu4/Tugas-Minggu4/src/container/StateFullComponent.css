@@ -1,0 +1,70 @@
+.tulisan-form{
+    text-align: center;
+    padding: 5px;
+}
+
+.tulisan{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold
+}
+
+.center{
+    font-family: 'Raleway', sans-serif;
+    background-color: #1abc9c;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+        border-style: solid;
+        border-width: medium;
+        margin: auto;
+        width: 350px;
+        padding: 10px;
+        
+      
+}
+
+.form-item{
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 2rem;
+    height: 25px;
+    width: 15rem;
+    border: 1px solid grey;
+}
+
+.form-submit{
+    font-family: 'Raleway', sans-serif;
+    height: 40px;
+    width: 21rem;
+    color: #fff;
+    background-color:green;
+    border: none;
+    letter-spacing: 0.2rem;
+    transition: 0.3s opacity ease;
+    cursor: pointer;
+}
+.form-cancel{
+    font-family: 'Raleway', sans-serif;
+    height: 36px;
+    width: 10rem;
+    color: #fff;
+    background-color:red;
+    border: none;
+    letter-spacing: 0.2rem;
+    transition: 0.3s opacity ease;
+    cursor: pointer;
+}
+
+.border{
+    padding: 25px;
+}
+.form-submit:hover{
+   opacity: 0.6;
+}
