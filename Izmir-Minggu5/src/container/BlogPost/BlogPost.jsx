@@ -15,9 +15,9 @@ class BlogPost extends Component{
           status: ""
         }
     };
-    
+
     ambilDataDariServerAPI = () => {
-        fetch('http://localhost:3000/posts?_sort=id&_order=desc')
+        fetch('http://localhost:3000/posts')
         .then(response => response.json())
         .then(jsonHasilAmbilDariAPI =>{
         this.setState({
