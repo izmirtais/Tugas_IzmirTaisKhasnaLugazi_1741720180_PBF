@@ -7,9 +7,15 @@ const Post = (props) => {
                 <img src="http://placeimg.com/80/80/tech" alt="Gambar Tumbnail Artikel"/>
             </div>
             <div className="konten-artikel">
-                <div className="judul-artikel">{props.judul}</div>
-                <p className="isi-artikel">{props.isi}</p>
-                <button className="btn btn-sm btn-warning" onClick={() => props.hapusArtikel(props.idArtikel)}>Hapus</button>
+                <p className="nim">NIM: {props.nim}</p>
+                <p className="nama">Nama: {props.nama}</p>
+                <p className="alamat">Alamat: {props.alamat}</p>
+                <p className="hp">Nomor HP: {props.hp}</p>
+                <p className="angkatan">Angkatan (Tahun): {props.angkatan}</p>
+                <p className="status">Status: {props.status}</p>
+                <button className="btn btn-sm btn-warning" onClick={() => props.hapusArtikel(props.idMahasiswa)}> 
+                Hapus
+                </button>
             </div>
         </div>
     )
