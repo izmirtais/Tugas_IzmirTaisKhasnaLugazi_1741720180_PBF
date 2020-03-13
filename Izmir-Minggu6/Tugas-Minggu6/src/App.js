@@ -17,12 +17,9 @@ function App() {
   return (
     <Router>
       <div>
-        <div className="background"/>
-        <AuthButton/>
-
+        <div className="nav">
         <ul>
-          <li>
-            <Link to="/beranda">Beranda</Link>
+          <li><Link to="/beranda">Beranda</Link>
           </li>
           <li>
             <Link to="/produk">Produk</Link>
@@ -30,6 +27,7 @@ function App() {
           <li>
             <Link to="/profil">Profil</Link>
           </li>
+          <AuthButton/>
         </ul>
 
         <Switch>
@@ -46,6 +44,7 @@ function App() {
             <ProtectedPage/>
           </PrivateRoute>
         </Switch>
+      </div>
       </div>
     </Router>
   );
@@ -68,10 +67,10 @@ function AuthButton(){
 
   return fakeAuth.isAuthenticated ? (
     <p>
-      Selamat Datang! lanjutkan dengan login terlebih dahulu{ " " }
+      Selamat Datang! Hal yang paling menyenangkan ditengah masa sulit adalah kesehatan.{ " " }
       <button
       onClick={() => {
-        fakeAuth.signout(() => history.push("/"));
+        fakeAuth.signout(() => history.push("/produk"));
       }}
       >
         Sign Out
@@ -128,7 +127,7 @@ function LoginPage(){
   let history = useHistory();
   let location = useLocation();
 
-  let {from} = location.state || { from: { pathname: "/"} };
+  let {from} = location.state || { from: { pathname: "/login"} };
   let login = () => {
     fakeAuth.authenticate(() => {
       history.replace(from);

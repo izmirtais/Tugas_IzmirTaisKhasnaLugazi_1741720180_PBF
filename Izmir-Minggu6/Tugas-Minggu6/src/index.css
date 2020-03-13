@@ -12,7 +12,6 @@ code {
     monospace;
 }
 
-
 .nav{
   margin: auto;
   text-align: center;
@@ -22,7 +21,7 @@ code {
 }
 
 .nav ul{
-  background: maroon;
+  background: rgb(6, 86, 92);
   list-style: none;
   position: relative;
   display: inline-table;
@@ -50,6 +49,7 @@ code {
 p{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  color: aliceblue;
 }
 h1{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -61,4 +61,8 @@ p{
 
 body{
   background-color: burlywood;
+}
+
+button{
+  background-color: skyblue;
 }
