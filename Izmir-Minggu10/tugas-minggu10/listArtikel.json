@@ -1,0 +1,17 @@
+{
+  "posts": [
+    {
+      "nim": 1,
+      "nama": "",
+      "alamat": "",
+      "hp": "",
+      "angkatan": 1,
+      "status": "",
+      "id": 1
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
