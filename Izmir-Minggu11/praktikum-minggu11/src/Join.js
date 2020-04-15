@@ -21,6 +21,16 @@ const Join = () => {
             });
     };
 
+    const handleLoginWithSignUp = () => {
+        const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+        firebase
+        .auth()
+        .signInWithPopup(googleAuthProvider)
+        .then(res => {
+            if (res.user) Auth.setLoggedIn(true);
+        });
+    };
+
     return (
         <div>
             <h1>Join</h1>
@@ -40,7 +50,7 @@ const Join = () => {
                     placeholder = "password"
                 />
                 <hr/>
-                <button class = "googleBtn" type="button">
+                <button class = "googleBtn" type="button" onClick={() => handleLoginWithSignUp()}>
                     <img
                         src = "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
                         alt = "logo"
