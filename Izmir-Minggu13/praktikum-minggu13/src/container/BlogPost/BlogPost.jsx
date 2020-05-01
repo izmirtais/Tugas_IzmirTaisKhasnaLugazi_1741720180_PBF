@@ -93,8 +93,8 @@ class BlogPost extends Component{
                 </div>
                 <h2>Daftar Artikel</h2> {   // looping dan masukkan untuk setiap data yang ada di listArtikel ke variabel artikel
                     this.state.listArtikel.map(artikel => {  
-                        return <Post key={artikel.id} judul={artikel.title} isi={artikel.body} 
-                        idArtikel={artikel.id} hapusArtikel={this.handleHapusArtikel}/>  
+                        return <Post key={artikel.uid} judul={artikel.title} isi={artikel.body} 
+                        idArtikel={artikel.uid} hapusArtikel={this.handleHapusArtikel}/>  
                     })
                 }
             </div>
