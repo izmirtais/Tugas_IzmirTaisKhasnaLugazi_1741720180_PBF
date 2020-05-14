@@ -1,0 +1,35 @@
+#p-home{
+    display: block;
+    color: #1c4a58;
+    font-size: 20px;
+    padding: 10px;
+    width: 90%;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+#h1-home{
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0e2329;
+}
+
+.txt{
+    height:180px; /*atur angkanya sampe dirasa udah pas*/
+    background:#C73B2F; 
+    padding:10px; 
+    color:#fff;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+  }
